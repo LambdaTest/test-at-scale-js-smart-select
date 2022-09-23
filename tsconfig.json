@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "commonjs",
+        "target": "es5",
+        "downlevelIteration": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "composite": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowJs": false,
+        "resolveJsonModule": true,
+        "importHelpers": true,
+        "noUnusedLocals": true,
+        "noImplicitReturns": true,
+        "skipLibCheck": true,
+        "outDir": "dist",
+        "sourceMap": true,
+        "declaration": true,
+        "declarationMap": true
+    },
+    "include": [
+        "src",
+        "index.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "types": [
+        "node"
+    ]
+}

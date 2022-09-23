@@ -1,0 +1,11 @@
+node_modules/
+dist/
+tsconfig.tsbuildinfo
+.nyc_output
+__tas/
+
+# MacOS
+.DS_Store
+
+# Smart select binaries
+bundle*

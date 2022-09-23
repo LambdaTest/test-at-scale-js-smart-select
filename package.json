@@ -1,0 +1,55 @@
+{
+  "name": "@lambdatest/test-at-scale-js-smart-select",
+  "version": "0.1.4",
+  "description": "> TODO: description",
+  "author": "Saurabh Prakash <saurabhp@lambdatest.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index.ob.js",
+  "private": true,
+  "bin": {
+    "execute": "dist/index.ob.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LambdaTest/test-at-scale-js.git",
+    "directory": "packages/smart-select"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run compile && npm run lint",
+    "compile": "tsc",
+    "clean": "rimraf dist",
+    "bundle": "webpack && pkg dist/bundle.js -t=macos,linux",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "obfuscate": "node ./dist/obfuscate.js",
+    "create": ""
+  },
+  "dependencies": {
+    "@discoveryjs/json-ext": "^0.5.6",
+    "jest-haste-map": "^28.1.0",
+    "jest-resolve": "^28.1.0",
+    "source-map-resolve": "^0.6.0",
+    "tslib": "^2.3.1",
+    "yargs": "^17.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "eslint": "^7.32.0",
+    "javascript-obfuscator": "^3.2.6",
+    "pkg": "^5.7.0",
+    "rimraf": "^3.0.2",
+    "ts-loader": "^9.2.6",
+    "tslint": "^6.1.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-obfuscator": "^3.5.0"
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/
+npm-debug.log
+tsconfig.tsbuildinfo
+.DS_Store
+
+# IMP: ignore typescript source files in package
+**/*.ts
+dist/*
+tsconfig.json
+.eslint*
+README.md
